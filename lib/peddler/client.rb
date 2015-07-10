@@ -3,6 +3,7 @@ require 'jeff'
 require 'peddler/marketplace'
 require 'peddler/operation'
 require 'peddler/parser'
+require 'peddler/error_parser'
 
 module Peddler
   # An abstract client
