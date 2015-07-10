@@ -212,7 +212,7 @@ module Peddler
 
     def decorate_error(e)
       if e.is_a?(::Excon::Errors::HTTPStatusError)
-        e.instance_variable_set(:@response, Peddler::ErrorParser.new(e.response))
+        e.instance_variable_set(:@response, ErrorParser.new(e.response))
       end
 
       e
